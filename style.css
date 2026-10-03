@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'Hanken-Thin';
-    src: url('fonts/HankenGrotesk-Thin.woff2') format('woff2');
+    src: url('Fonts/HankenGrotesk-Thin.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Hanken-Regular';
-    src: url('fonts/HankenGrotesk-Regular.woff2') format('woff2');
+    src: url('Fonts/HankenGrotesk-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Hanken-Medium';
-    src: url('fonts/HankenGrotesk-Medium.woff2') format('woff2');
+    src: url('Fonts/HankenGrotesk-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Hanken-Bold';
-    src: url('fonts/HankenGrotesk-Bold.woff2') format('woff2');
+    src: url('Fonts/HankenGrotesk-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Hanken-ExtraBold';
-    src: url('fonts/HankenGrotesk-ExtraBold.woff2') format('woff2');
+    src: url('Fonts/HankenGrotesk-ExtraBold.woff2') format('woff2');
 }
 
 header {
