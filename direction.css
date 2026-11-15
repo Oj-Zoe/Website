@@ -11,26 +11,79 @@ body {
     background-color: #dedede;
 }
 
-main p {
-    font-family: "Merriweather", serif;
+/* Style pour le texte Scrivener */
+
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 1.2em}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 1.2em}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none}
+
+/* Style général de la balise main texte */
+
+main {
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 3% 5%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(4rem, 6vw, 8rem);
+    text-align: right;
+    margin-right: 5%;
+    padding: 3%;
+    color: #666;
+    display: block;
+}
+
+main p {
+    color: #131313;
+    font-family: "Merriweather", serif;
+    line-height: 1.8;
+    font-weight: thin;
+    font-optical-sizing: auto;
+    font-weight: thin;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+}
+
+#intro {
+    background-image: url("Img/Direction_Back_Intro.png");
+    background-size: cover;       /* remplit tout l'écran, quitte à rogner l'image */
+    background-position: top;  /* garde le centre de l'image visible */
+    background-repeat: no-repeat; /* pas de répétition */
 }
 
 #logo {
     display: block;
+    position: absolute;
     width: 60%;
     margin-left: 10%;
-    margin-top: 30%;
 }
 
 #circle {
     display: block;
-    width: 30%;
+    position: absolute;
+    width: 20%;
     margin-left: 60%;
-    margin-top: 50%;
+    margin-top: 40%;
+}
+
+footer {
+    margin-bottom: 55px;
+    text-align: center;
+    font-family: 'Hanken-Regular', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: #131313;
 }
