@@ -1,0 +1,36 @@
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    background-color: #dedede;
+}
+
+main p {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+#logo {
+    display: block;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 30%;
+}
+
+#circle {
+    display: block;
+    width: 30%;
+    margin-left: 60%;
+    margin-top: 50%;
+}

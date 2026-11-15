@@ -1,0 +1,118 @@
+i {
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hanken-Thin';
+    src: url('Fonts/HankenGrotesk-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hanken-Regular';
+    src: url('Fonts/HankenGrotesk-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hanken-Medium';
+    src: url('Fonts/HankenGrotesk-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hanken-Bold';
+    src: url('Fonts/HankenGrotesk-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hanken-ExtraBold';
+    src: url('Fonts/HankenGrotesk-ExtraBold.woff2') format('woff2');
+}
+
+/* Style pour l'intro pleine page */
+
+#intro {
+width: 100vw;
+    height: 100vh;   /* repli pour les anciens navigateurs */
+    height: 100dvh;  /* tient compte des barres d'adresse mobiles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+
+/* Style général de la navigation en lecture */
+
+#navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+  position: fixed;
+  font-family: 'Hanken-Thin', sans-serif;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav > ul.menu {
+  display: flex;
+  list-style: none;
+  background-color: #131313;
+  margin: 0;
+  padding: 0;
+  position: right;
+  justify-content: flex-end;
+}
+
+nav > ul.menu > li {
+  color: #131313;
+  left: 0;
+}
+
+nav > ul.menu > li > a {
+  display: block;
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* Style et masquage du sous-menu */
+nav ul.sous-menu {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  z-index: 1000;
+}
+
+nav ul.sous-menu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  white-space: nowrap;
+  background-color: #2e2e2e;
+  border :#131313  solid 1px;
+  text-align: right;
+}
+
+/* Affichage du sous-menu au survol du parent */
+nav li.deroulant:hover .sous-menu {
+  display: block;
+}
+
+/* Effets de survol sur les liens */
+nav a:hover {
+  background-color: #2e2e2e;
+}
